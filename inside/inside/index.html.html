@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todo.css">
+    
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Focus on <span>Today</span></h1>
+        <div class="app-container">
+            <h2 class="subtitle"><span class="add">Add</span><span class="task">Task</span><span class="for">For</span><span class="today">Today</span><img class="sun-icon" src="/inside/img/Sun.svg" alt=""></h2>
+            <p class="progress-label">Raise the bar by completing your goals</p>
+            <div class="progress-bar">
+                <div class="progress-value"><span></span></div>
+            </div>
+            <p class="error-label">Plese set all the 3 goals</p>
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="checkIcon" src="img/check-icon.svg" alt="check-icon">
+                </div>
+                <input id="first" class="goal-input" type="text" placeholder="Add a new goal...">
+            </div>
+            <div class="goal-container ">
+                <div class="custom-checkbox " id="new">
+                    <img class="checkIcon" src="img/check-icon.svg" alt="check-icon">
+                </div>
+                <input id="second" class="goal-input" type="text" placeholder="Add a new goal...">
+            </div>
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="checkIcon" src="img/check-icon.svg" alt="check-icon">
+                </div>
+                <input id="third" class="goal-input" type="text" placeholder="Add a new goal...">
+            </div>
+            <p class="quote">"Move one step ahead, today"</p>
+            <p class="made-with">Made with<span class="love">&#10084;</span> By Shubham Thakur</p>
+
+        </div>
+    </main>
+    <script src="todo.js" ></script>
+</body>
+
+</html>

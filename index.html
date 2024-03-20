@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://kit.fontawesome.com/2b5f94525a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo" title="Logo">
+          <img src="img/logo.png" alt="">
+          <span>Shubham Thakur</span>
+        </div>
+
+        <ul id="sideMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i id="menu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi,I'm <span>Shubham</span> <br> FrontEnd Developer</h1>
+
+       
+    
+            
+              <div class="social-icons-top">
+                <a href="https://www.linkedin.com/in/shubham-thakur-b511032b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank" title="Linkedin"><img src="logo/linkedin logo.png" alt="Linkedin"></a>
+    
+                <a href="https://x.com/Shubham20448922?t=ZciicUi-imQrbtj96gKXGA&s=09" target="_blank" title="Twitter"><img
+                    src="logo/twitter logo.png" alt="Linkedin"></a>
+                <a href="https://github.com/shubhamThakur79" target="_blank" title="Github"><img src="logo/github logo.png"
+                    alt="Linkedin"></a>
+                    <br>
+    
+                    <a class="btn2" href="Shubham Thakur Resume Pdf.pdf" download="Shubham Thakur Resume"
+                      title="Download Resume Here"><i id="down" class="fa-solid fa-download"></i>Download Resume</a>
+    
+              </div>
+            </div>
+      </div>
+    </div>
+  </header>
+  <!-- --------About Section--------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img/3d about img.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hey, I'm Shubham, and I'm from the beautiful hills of Himachal Pradesh, India. I'm studying Computer
+            Applications (BCA), and right now, I'm really into making websites. I'm learning HTML, CSS, and JavaScript
+            to make cool stuff you can see on the front of websites.
+
+            I love technology and being creative, so coding is a perfect fit for me. I'm always trying to get better at
+            it, paying attention to all the little details to make websites look awesome and easy to use.
+
+            When I'm not coding, I like exploring the nature around me. Himachal Pradesh has some amazing places to see,
+            and I find it super inspiring. Whether I'm hiking in the forests or looking at the snowy mountains, being in
+            nature helps me relax and gives me new ideas.
+
+            I'm excited about my studies and getting better at web development. I think it's a cool way to combine my
+            love for technology with making things that people enjoy using.</p>
+        </div>
+        <section class="ShowBase">
+          <div class="tab-titles">
+            <p class="tab-links active-link">Skills</p>
+            <p class="tab-links ">Experience</p>
+            <p class="tab-links">Education</p>
+          </div>
+
+          <div id="skill" class="tab-contents active-tab">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+
+              <div class="skill-div">
+                <figure>
+                  <img src="logo/html logo.png" alt="Html" class="Skills-logo">
+                  <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                  <img src="logo/css logo.png" alt="Css" class="Skills-logo">
+
+                  <figcaption>CSS</figcaption>
+                </figure>
+                <figure>
+                  <img src="logo/tailwind logo.png" alt="Tailwind css" class="Skills-logo">
+                  <figcaption>Tailwind <br> Css</figcaption>
+                </figure>
+                <figure>
+                  <img src="logo/js logo.png" alt="JS" class="Skills-logo">
+                  <figcaption>JS</figcaption>
+                </figure>
+            </ul>
+            <div class="skill-img">
+              <img class="img1" src="img/3d left boy img.png" alt="">
+            </div>
+          </div>
+
+          <div id="experience" class="tab-contents">
+
+            <ul>
+              <li>I started learning web development in<span> 2022</span><br>and I'll soon have 2 years of experience,
+              </li>
+              <li><span> mostly based on personal projects.</span> However, <br>I don't have any professional experience
+                in
+                the industry.</li>
+            </ul>
+            <div class="experience-img">
+
+              <img src="img/3d left img.png" alt="image not here">
+            </div>
+          </div>
+
+          <div id="education" class="tab-contents">
+
+            <ul>
+              <li>I completed my 12th grade education, and now I'm <br>
+                studying for a<span>(Bachelor of Computer Applications)<br>
+                </span>degree from 2022 to 2025.</li>
+            </ul>
+            <div class="education-img">
+
+              <img src="img/Untitledlogo (1).png" alt="">
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!---------------------- Services-------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>As a web developer offering web design services, my focus is on creating visually
+            stunning and user-friendly websites. With a keen eye for design and a deep understanding
+            of web development principles, I strive to build websites that stand out in the digital
+            landscape. Whether it's crafting elegant layouts, selecting vibrant colors,
+            or integrating engaging multimedia elements, I am dedicated to delivering top-notch
+            web designs that leave a lasting impression. My ultimate goal is to showcase my skills
+            and expertise, attracting potential clients who are seeking high-quality web design
+            solutions for their projects.</p>
+
+
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-figma"></i>
+
+          <h2>UI/UX Design</h2>
+          <p>
+            As a provider of UI/UX design services, I specialize in creating intuitive and visually appealing digital
+            experiences. With a focus on user-centered design principles, I craft interfaces that seamlessly guide users
+            through websites and applications, enhancing their overall satisfaction and engagement. From wireframing and
+            prototyping to implementing interactive elements, my goal is to deliver designs that not only look stunning
+            but also prioritize usability and accessibility. Whether it's a website, mobile app, or software interface,
+            I am committed to delivering exceptional UI/UX solutions that meet the unique needs of my clients and their
+            target audience.</p>
+          <a href="#">Learn more</a>
+
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>As someone offering app design services, I focus on creating captivating and user-friendly interfaces for
+            mobile applications. Even though I may not develop the apps themselves, I specialize in designing layouts,
+            selecting colors, and integrating graphics and text to make the apps visually appealing and easy to
+            navigate. My goal is to design interfaces that not only look great but also enhance the overall user
+            experience. Whether it's crafting wireframes, prototyping interactions, or refining visual elements, I
+            strive to deliver designs that captivate users and effectively communicate the app's purpose and
+            functionality. With a passion for design and a commitment to excellence, I aim to provide top-notch app
+            design solutions that meet the needs and expectations of my clients.</p>
+          <a href="#">Learn more</a>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--------------Project-------------- -->
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="project img/coming soon project1.jpg" alt="Project 1 image">
+          <div class="layer">
+            <h3>
+              Project 1 is currently unavailable.</h3>
+            <p>Project 1 is not uploaded yet. Stay tuned, it will be available soon.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="project img/coming soon project2.jpeg" alt="Project 2 image">
+          <div class="layer">
+            <h3>
+              Project 2 is currently unavailable.</h3>
+            <p>Project 2 is not uploaded yet. Stay tuned, it will be available soon.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="project img/coming soon project3.jpeg" alt="Project 3 image">
+          <div class="layer">
+            <h3>
+              Project 3 is currently unavailable.</h3>
+            <p>Project 3 is not uploaded yet. Stay tuned, it will be available soon.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+
+
+  <!-- =================Contact ==================== -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <a href="mailto:shubhamthakurbh1@gmail.com"><i id="email"
+              class="fa-solid fa-envelope"></i>Shubhamthakurbh1@gmail.com</a>
+          <br>
+          <a href="tel:7876314359"><i class="fa-solid fa-phone"></i>7876314359</a>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shubham-thakur-b511032b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank" title="Linkedin"><img src="logo/linkedin logo.png" alt="Linkedin"></a>
+
+            <a href="https://x.com/Shubham20448922?t=ZciicUi-imQrbtj96gKXGA&s=09" target="_blank" title="Twitter"><img
+                src="logo/twitter logo.png" alt="Linkedin"></a>
+            <a href="https://github.com/shubhamThakur79" target="_blank" title="Github"><img src="logo/github logo.png"
+                alt="Linkedin"></a>
+
+
+          </div>
+          <a class="btn2" href="Shubham Thakur Resume Pdf.pdf" download="Shubham Thakur Resume"
+            title="Download Resume Here"><i id="down" class="fa-solid fa-download"></i>Download Resume</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <label for="name">Name:</label>
+            <input type="text" name="Name" placeholder="Your Name" required id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="Email" placeholder="Your Email" required id="email">
+            <label for="message">Message:</label>
+            <textarea name="Message" rows="6" placeholder="Your Message" id="message"></textarea>
+            <button type="reset" class="btn2">Reset</button>
+            <button type="submit" class="btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Made with <span>❤</span> By Shubham Thakur</p>
+      <p>Copyright<span>&copy;</span>by Shubham Thakur </p>
+    </div>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbycp5nE7QmYOandXdJi6D_SAoecnhlHuI8lniBNIGVKMQaPzX9W11McFe81g-3PTGCC/exec'
+    const form = document.forms['submit-to-google-sheet']
+const msg  = document.querySelector("#msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+          msg.innerHTML="Message send successfully";
+          setTimeout(() => {
+            msg.innerHTML=""
+          },5000);
+          form.reset();
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
