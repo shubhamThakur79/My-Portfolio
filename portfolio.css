@@ -931,8 +931,7 @@ nav .fa-solid {
   form .btn2 {
     padding: 10px 15px;
     font-size: 14px;
-    
-    margin-inline-start: 80px;
+    margin-left: 20px;
     
 
   }
@@ -943,7 +942,7 @@ nav .fa-solid {
 
     position: absolute;
     bottom: 40px;
-
+  
 
   }
 
