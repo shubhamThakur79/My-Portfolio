@@ -11,8 +11,8 @@ html {
 
 body {
   background: rgb(226, 68, 32);
-background: linear-gradient(90deg, rgba(73, 73, 73, 0.452) 9%, rgba(254, 255, 255, 0.384) 100%);
-  color:#1a1919;
+  background: linear-gradient(90deg, rgba(73, 73, 73, 0.452) 9%, rgba(254, 255, 255, 0.384) 100%);
+  color: #1a1919;
 
 }
 
@@ -20,18 +20,40 @@ header {
   /* position: relative; */
   height: 100vh;
   width: 100%;
-  background-image: url(img/3d\ background\ img1.png);
+  /* background-image: url(img/3d\ background\ img1.png); */
+  /* background-image: url(https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js);
+  background-image: url(https://prod.spline.design/9HJBvKFkNNxYqQPY/scene.splinecode); */
   background-repeat: no-repeat;
 
   background-position: right;
   background-color: black;
 
-color: white;
+  color: white;
+
+}
+
+header .gola {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+
+}
+
+.gola script,
+spline-viewer {
+  /* border: 1px solid white; */
+  /* display: none; */
+  margin-left: 808px;
+  width: 40%;
+  height: 100%;
+  padding-top: 100px;
 }
 
 .container {
   padding: 10px 7%;
   /* background-color: red; */
+
 }
 
 nav {
@@ -41,10 +63,23 @@ nav {
   flex-wrap: wrap;
   /* background-color: #fff; */
   flex-basis: 50%;
- 
+  position: absolute;
+  top: 30px;
+
+  z-index: 50;
 }
-#sideMenu a{
-  color:white;
+
+#sideMenu {
+  /* background-color: red; */
+  margin: 10px 500px;
+  margin-right: -200px;
+  position: relative;
+  right: 100px;
+
+}
+
+#sideMenu a {
+  color: white;
 }
 
 .logo {
@@ -79,11 +114,12 @@ ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
+
 }
 
 nav ul li a {
   text-decoration: none;
-  color:#262626;
+  color: #262626;
   font-size: 18px;
   position: relative;
 }
@@ -109,7 +145,9 @@ nav ul li a:hover::after {
   font-size: 30px;
   letter-spacing: 5px;
   margin-top: 10%;
-
+  position: absolute;
+  top: 30px;
+  z-index: 50;
 }
 
 .header-text h1 {
@@ -225,8 +263,8 @@ nav ul li a:hover::after {
 .tab-contents ul {
   padding-top: 60px;
   padding-bottom: 60px;
-/* background-color: red; */
-display: grid;
+  /* background-color: red; */
+  display: grid;
 }
 
 .tab-contents ul li span {
@@ -238,7 +276,7 @@ display: grid;
 .tab-contents {
   position: relative;
   transition: all 0.9s ease-in-out;
- 
+
 
 }
 
@@ -247,7 +285,7 @@ display: grid;
   margin-top: 40px;
   /* justify-content: space-around; */
   /* background-color: red; */
-  
+
 }
 
 .skill-div figure {
@@ -383,6 +421,12 @@ display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+}
+
+.div {
+  background-color: red;
+  height: 500px;
+  width: 100%;
 }
 
 .project {
@@ -591,7 +635,7 @@ display: grid;
 .contact-left .btn2:hover {
   -webkit-text-stroke: 1px rgba(19, 113, 156, 0.192);
   outline: 1px solid pink;
-  color:#424142;
+  color: #424142;
 
 }
 
@@ -616,11 +660,12 @@ form textarea {
   background: #0c0c0c33;
   padding: 15px;
   margin: 10px 0px;
-  color:rgba(0, 0, 0, 0.884);
+  color: rgba(0, 0, 0, 0.884);
   font-size: 16px;
   border-radius: 6px;
 }
-::placeholder{
+
+::placeholder {
   color: #2807e69c;
 }
 
@@ -628,7 +673,7 @@ form .btn2 {
   padding: 14px 50px;
   background: #ff0051dc;
   color: rgb(15, 15, 15);
-  border: none; 
+  border: none;
 
   border-radius: 6px;
   font-size: 16px;
@@ -676,7 +721,7 @@ nav .fa-solid {
 }
 
 #msg {
-  color:green;
+  color: green;
   display: inline-block;
   margin-top: -40px;
   margin-left: 100px;
@@ -689,54 +734,126 @@ nav .fa-solid {
     padding: 5px 5px;
   }
 
-  .logo {
-    margin-left: 10px;
-  }
+  
 
   #menu {
     padding-right: 20px;
   }
 
   header {
-    background-image: url(responsiveImgs/header.png);
+    /* background-image: url(responsiveImgs/header.png); */
     height: 70vh;
-    margin-top: 60px;
+    margin-top: 50px;
     position: relative;
   }
+header{
+  position: relative;
+}
+  /* ------------- 3D Style--------------- */
+
+  header .gola {
+    /* border: 1px solid red; */
+    width:60%;
+    height: 90%;
+    min-height: 400px;
+    margin-left: -35px;
+   position: absolute;
+   bottom:10px;
+   right: -0;
+overflow-x: hidden;
+  
+    /* background-color: red; */
+
+  }
+
+  .gola script,
+  spline-viewer {
+    /* border: 1px solid rgb(238, 4, 4); */
+
+    margin-left: -20px;
+    padding-left: 40px;
+    width: 100%;
+    min-width: 250px;
+    /* max-width: 600px;
+    min-width: 250px; */
+    height: 100%;
+    max-height: 600px;
+    min-height: 250px;
+    padding-top: 150px;
+    padding-left:0px ;
+    position:relative;
+    left: 0;
+  
+    z-index: 100;
+
+  }
+
+  .container {
+    padding: 10px 7%;
+    /* background-color: red; */
+
+  }
+
+
+
+  #sideMenu {
+    background-color: rgba(5, 238, 44, 0.521);
+    margin: 0px 0px;
+    margin-right: 0px;
+    position: none;
+    right: -700px;
+    position: relative;
+    z-index: 60;
+
+
+  }
+
+  /* --------------End 3D Style------------------------ */
 
   nav {
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 200;
     /* background-color: #0bf5d6; */
     width: 100%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
+    height: 55px;
 
   }
 
   nav .fa-solid {
     text-align: end;
     margin-right: 20px;
+    position: absolute;
     /* background-color: red; */
-
-  color:black;
+    right: -10px;
+    top: 18px;
+    color: rgb(241, 0, 0);
   }
 
   .logo {
     width: 230px;
+    height: 55px;
     /* background-color: red; */
   }
 
   .logo img {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     object-fit: contain;
 
   }
-#sideMenu a{
-  color: rgb(17, 0, 255);
-  
-}
+
+  #sideMenu a {
+    
+    color:red;
+    font-weight: 900;
+  }
+  #sideMenu a:hover{
+    color:red;
+    color: rgb(245, 7, 186);
+  }
+
   .container {
     padding: 10px 0% 10px;
     /* background-color: red; */
@@ -752,6 +869,7 @@ nav .fa-solid {
   .header-text p {
     font-size: 16px;
     font-weight: 300;
+    /* color: red; */
   }
 
   .header-text h1 {
@@ -777,14 +895,14 @@ nav .fa-solid {
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
-  
+  backdrop-filter: blur(50px);
     transition: right 1s ease-in-out;
   }
 
   nav ul li {
     display: block;
     /* margin: 60px 30px 0px 40px; */
-    margin:60px 20%;
+    margin: 60px 20%;
 
   }
 
@@ -793,18 +911,21 @@ nav .fa-solid {
     top: 3%;
     left: 35px;
     cursor: pointer;
-    color: rgba(250, 4, 4, 0.685);
+    color: rgba(243, 1, 1, 0.897);
     font-size: 40px;
-    border: 1px solid rgb(48, 46, 48);
-    padding: 5px 10px;
-    border-radius: 50%;
-   margin-bottom: 40px;
-   transition: all 0.3s ease-in-out;
+    border: 1px solid rgb(250, 248, 250);
+    padding: 5px;
+  text-align: start;
+    margin-bottom: 40px;
+    width: 45px;
+    border-radius: 8px;
+    background-color: #262626;
+    transition: all 0.2s ease-in;
   }
 
   nav ul .fa-solid:hover {
-    transform: scale(1.1);
-    color: rgba(20, 20, 20, 0.658);
+  
+    color: rgba(204, 22, 22, 0.849);
 
   }
 
@@ -947,30 +1068,48 @@ nav .fa-solid {
     padding: 10px 15px;
     font-size: 14px;
     margin-left: 20px;
-    
+
 
   }
 
   .social-icons-top {
-
-    gap: 10px;
-
-    position: absolute;
-    bottom: 40px;
-  
-
+ flex-direction: column;
+ align-items: start;
+ row-gap: -20px;
+    /* background-color:rgb(248, 5, 5); */
+    width: 170px;
+    height: 270px;
+    padding:15px  10px ;
+   margin-top: 20px;
+   z-index: 200;
+    /* position: absolute;
+    bottom: -230px;
+ 
+    width: 95%;
+    min-width: 200px;
+    max-width: 600px; */
+     
+    /* padding-left: 20px; */
+  }
+  .social-icons-top:hover{
+    position: relative;
+  z-index: 200;
+    /* background-color: rgb(21, 255, 0); */
   }
 
   .social-icons-top a img {
     display: block;
     height: 40px;
     width: 40px;
+    margin-top: -0px;
+    /* background-color: #00ff0d; */
 
   }
 
   .social-icons-top .btn2 {
     padding: 8px 8px 8px 10px;
-
+    /* background-color: #00ff0d; */
+margin-top: -18px;
     font-size: 12px;
 
     text-align: center;
